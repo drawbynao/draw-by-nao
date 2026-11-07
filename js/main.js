@@ -63,17 +63,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // ORDENAR — scroll al formulario
 // ========================================
 function openOrderModal(productName) {
-    const productoInput = document.getElementById('producto');
     const tipoSelect = document.getElementById('tipo');
-
-    productoInput.value = productName;
-
-    if (productName.toLowerCase().includes('hero') || productName.toLowerCase().includes('anime')) {
-        tipoSelect.value = 'anime';
-    } else if (productName.toLowerCase().includes('skull') || productName.toLowerCase().includes('flame')) {
-        tipoSelect.value = 'banda';
-    } else if (productName.toLowerCase().includes('bicho')) {
-        tipoSelect.value = 'original';
+    
+    if (productName.includes('Web')) {
+        tipoSelect.value = 'web';
+    } else if (productName.includes('Merch')) {
+        tipoSelect.value = 'merch';
+    } else if (productName.includes('Identidad')) {
+        tipoSelect.value = 'branding';
     }
 
     const contactSection = document.getElementById('contacto');
@@ -81,9 +78,7 @@ function openOrderModal(productName) {
     const top = contactSection.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: 'smooth' });
 
-    setTimeout(() => {
-        document.getElementById('nombre').focus();
-    }, 800);
+    setTimeout(() => { document.getElementById('nombre').focus(); }, 800);
 }
 
 // ========================================
