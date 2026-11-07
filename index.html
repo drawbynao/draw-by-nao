@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Draw By Nao - Arte que se viste. Sudaderas y chamarras pintadas a mano con diseños únicos de anime, bandas y arte original.">
-    <title>Draw By Nao | Arte Que Se Viste</title>
+    <meta name="description" content="Draw By Nao Studio - Agencia creativa, desarrollo web y producción B2B.">
+    <title>Draw By Nao Studio | Agencia Creativa</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,416 +18,290 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <!-- ==============================
+<!-- ==============================
          HEADER
          ============================== -->
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
-
                 <!-- Logo -->
                 <a href="#inicio" class="logo">
-                    <!--
-                        IMAGEN LOGO:
-                        Reemplaza el src por la ruta a tu logo, por ejemplo:
-                        src="img/logo.png"
-                    -->
-                    <img src="img/logo.png" alt="Draw By Nao Logo" class="logo-img"
-                         onerror="this.style.display='none'">
+                    <img src="img/logo.png" alt="Draw By Nao Studio Logo" class="logo-img" onerror="this.style.display='none'">
                     <span class="logo-text">Draw <span>By Nao</span></span>
                 </a>
 
                 <!-- Nav Links -->
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#coleccion">Colección</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#proceso">Proceso</a></li>
-                    <li><a href="#precios">Precios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#estudio">El Estudio</a></li>
+                    <li><a href="#metodologia">Metodología</a></li>
+                    <li><a href="#soluciones">Soluciones</a></li>
+                    <li><a href="#contacto">Cotizar</a></li>
                 </ul>
 
                 <!-- Hamburger -->
                 <button class="mobile-toggle" id="mobileToggle" aria-label="Menú">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
-
             </nav>
         </div>
     </header>
-
 
     <!-- ==============================
          HERO
          ============================== -->
     <section class="hero" id="inicio">
-        <!--
-            IMAGEN DE FONDO HERO:
-            Reemplaza src por tu imagen, por ejemplo: src="img/hero.jpg"
-            Si no tienes imagen aún, se verá el fondo degradado oscuro.
-        -->
-        <img src="img/hero.jpg" alt="Draw By Nao Hero" class="hero-bg"
-             onerror="this.style.display='none'">
-
+        <img src="assets/hero.jpg" alt="Draw By Nao Studio" class="hero-bg" onerror="this.style.display='none'">
         <div class="hero-content">
-            <span class="hero-badge">✨ Arte Hecho a Mano</span>
-            <h1 class="hero-title">Arte Que <span>Se Viste</span></h1>
+            <span class="hero-badge">✨ Estudio Creativo Integral</span>
+            <h1 class="hero-title">Construimos Marcas <span>Que Destacan</span></h1>
             <p class="hero-subtitle">
-                Sudaderas y chamarras pintadas a mano con diseños únicos.<br>
-                Cada pieza es una obra de arte irrepetible creada especialmente para ti.
+                Llevamos tu negocio al siguiente nivel. Desde el desarrollo de tu plataforma digital de alto rendimiento hasta la producción de tu mercancía corporativa.
             </p>
             <div class="hero-buttons">
-                <a href="#coleccion" class="btn btn-primary">Ver Colección</a>
-                <a href="#contacto" class="btn btn-secondary">Personalizar</a>
+                <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                <a href="#contacto" class="btn btn-secondary">Cotizar Proyecto</a>
             </div>
         </div>
-
-        <div class="scroll-indicator" onclick="document.getElementById('coleccion').scrollIntoView({behavior:'smooth'})">
+        <div class="scroll-indicator" onclick="document.getElementById('servicios').scrollIntoView({behavior:'smooth'})">
             <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-
-    <!-- ==============================
-         FEATURED PRODUCTS
+<!-- ==============================
+         SERVICIOS ESTUDIO & TALLER
          ============================== -->
-    <section class="featured" id="coleccion">
+    <section class="featured" id="servicios">
         <div class="container">
-            <h2 class="section-title fade-in">Drop De La <span class="highlight">Semana</span></h2>
+            <h2 class="section-title fade-in">Nuestras <span class="highlight">Soluciones</span></h2>
             <p class="section-subtitle fade-in">
-                Tres piezas únicas disponibles esta semana. Cada diseño es pintado a mano
-                y solo hay una unidad disponible.
+                Materializamos tus ideas. Desde mercancía y artículos para eventos, hasta ecosistemas digitales que hacen destacar tu marca.
             </p>
 
             <div class="products-grid">
 
-                <!-- Producto 1 — Anime -->
+                <!-- Servicio 1 — El Protagonista (Sublimación y Merch) -->
                 <div class="product-card fade-in">
                     <div class="product-image">
-                        <!--
-                            IMAGEN PRODUCTO 1:
-                            src="img/producto-anime.jpg"
-                        -->
-                        <img src="img/producto-anime.jpg" alt="Sudadera Anime"
-                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-tshirt\'></i></div>'">
-                        <span class="product-badge limited">Única</span>
+                        <img src="assets/servicio-taller.jpg" alt="Taller de Sublimación y Merch"
+                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-print\'></i></div>'">
+                        <span class="product-badge">El Taller</span>
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Anime Collection</span>
-                        <h3 class="product-title">My Hero Academia</h3>
+                        <span class="product-category">Producción Física</span>
+                        <h3 class="product-title">Merch & Sublimación</h3>
                         <p class="product-description">
-                            Diseño inspirado en los héroes de UA. Pintado a mano con técnica de acuarela sobre tela.
+                            Playeras, sudaderas, termos, tazas y artículos promocionales. Calidad premium impresa para tu negocio o uso personal.
                         </p>
                         <div class="product-footer">
-                            <span class="product-price">$950 <span class="original">$1,200</span></span>
-                            <button class="btn-cart" onclick="openOrderModal('My Hero Academia')">Ordenar</button>
+                            <button class="btn-cart" style="width:100%" onclick="openOrderModal('Merch y Sublimación')">Cotizar Producción</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 2 — Rock -->
+                <!-- Servicio 2 — El Híbrido (Eventos Sociales) -->
                 <div class="product-card fade-in">
                     <div class="product-image">
-                        <!--
-                            IMAGEN PRODUCTO 2:
-                            src="img/producto-skull.jpg"
-                        -->
-                        <img src="img/producto-skull.jpg" alt="Sudadera Flame Skull"
-                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-tshirt\'></i></div>'">
-                        <span class="product-badge">Disponible</span>
+                        <img src="assets/servicios-eventos.jpg" alt="Paquetes para Eventos Sociales"
+                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-glass-cheers\'></i></div>'">
+                        <span class="product-badge limited">Más Popular</span>
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Rock &amp; Metal</span>
-                        <h3 class="product-title">Flame Skull</h3>
+                        <span class="product-category">Físico + Digital</span>
+                        <h3 class="product-title">Paquetes Para Eventos</h3>
                         <p class="product-description">
-                            Calavera envuelta en llamas. Perfecta para conciertos y festivales. Técnica de pintura acrílica.
+                            Recuerdos físicos sublimados (vasos, termos) combinados con invitaciones digitales interactivas, mapas y confirmación de asistencia.
                         </p>
                         <div class="product-footer">
-                            <span class="product-price">$850 <span class="original">$1,100</span></span>
-                            <button class="btn-cart" onclick="openOrderModal('Flame Skull')">Ordenar</button>
+                            <button class="btn-cart" style="width:100%" onclick="openOrderModal('Paquete Eventos')">Armar Paquete</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Producto 3 — Original -->
+                <!-- Servicio 3 — El Complemento Premium (Desarrollo Web) -->
                 <div class="product-card fade-in">
                     <div class="product-image">
-                        <!--
-                            IMAGEN PRODUCTO 3:
-                            src="img/producto-bicho.jpg"
-                        -->
-                        <img src="img/producto-bicho.jpg" alt="Sudadera El Bicho"
-                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-tshirt\'></i></div>'">
-                        <span class="product-badge limited">El Bicho</span>
+                        <img src="assets/servicio-digital.jpg" alt="Desarrollo Web e Interacción"
+                             onerror="this.parentElement.innerHTML='<div class=\'product-image-placeholder\'><i class=\'fas fa-laptop-code\'></i></div>'">
+                        <span class="product-badge">Premium</span>
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Diseños Originales</span>
-                        <h3 class="product-title">El Bicho</h3>
+                        <span class="product-category">Tecnología</span>
+                        <h3 class="product-title">Soluciones Web</h3>
                         <p class="product-description">
-                            Diseño original de Naomi. Gato estilo poster propagandístico. Pieza de colección.
+                            Desarrollo de páginas web para emprendedores, tiendas en línea y mercancía corporativa interactiva con integración NFC o QR.
                         </p>
                         <div class="product-footer">
-                            <span class="product-price">$1,200 <span class="original">$1,500</span></span>
-                            <button class="btn-cart" onclick="openOrderModal('El Bicho')">Ordenar</button>
+                            <button class="btn-cart" style="width:100%" onclick="openOrderModal('Soluciones Web')">Cotizar Web</button>
                         </div>
                     </div>
                 </div>
 
             </div><!-- /products-grid -->
-
-            <div class="featured-cta fade-in">
-                <a href="#contacto" class="btn btn-outline">Ver Más Diseños</a>
-            </div>
         </div>
     </section>
 
-
     <!-- ==============================
-         ABOUT / NOSOTROS
+         EL ESTUDIO (Antes Nosotros)
          ============================== -->
-    <section class="about" id="nosotros">
+    <section class="about" id="estudio">
         <div class="container">
             <div class="about-grid">
-
-                <!-- Imagen artista -->
                 <div class="about-images fade-in">
-                    <!--
-                        IMAGEN ARTISTA (Naomi):
-                        src="img/naomi.jpg"
-                    -->
-                    <img src="img/naomi.jpg" alt="Naomi Artista" class="about-image-main"
-                         onerror="this.outerHTML='<div class=\'about-image-placeholder\'><i class=\'fas fa-user-circle\'></i></div>'">
+                    <img src="assets/equipo-estudio.jpg" alt="Equipo del Estudio" class="about-image-main" onerror="this.outerHTML='<div class=\'about-image-placeholder\'><i class=\'fas fa-building\'></i></div>'">
                 </div>
-
-                <!-- Contenido -->
                 <div class="about-content fade-in">
-                    <h2>La Artista <span>Detrás</span> Del Arte</h2>
-
+                    <h2>El Estudio Detrás del <span>Impacto</span></h2>
                     <p class="about-text">
-                        Naomi es una artista poblana de 26 años que descubrió su talento para el dibujo
-                        y decidió convertirlo en su forma de vida. Comenzó pintando bolsas de manta como
-                        una opción económica y ecológica, pero su pasión por crear arte único la llevó a
-                        encontrar en las sudaderas el lienzo perfecto.
+                        Nacimos del arte meticuloso y la atención al detalle. Lo que comenzó como la creación de piezas únicas pintadas a mano, evolucionó hacia un estudio integral donde escalamos nuestra infraestructura para ofrecer soluciones comerciales a otras empresas.
                     </p>
                     <p class="about-text">
-                        Cada pieza es pintada completamente a mano, lo que significa que no hay dos iguales.
-                        Desde diseños de anime hasta bandas de rock y creaciones originales inspiradas en
-                        sus mascotas, Naomi pone su corazón en cada trazo.
+                        Hoy, aplicamos ese mismo rigor estético tanto en el código de las plataformas que programamos como en la calidad de la mercancía que producimos mediante sublimación industrial. Tu marca es nuestro lienzo.
                     </p>
 
                     <div class="about-stats">
                         <div class="stat">
-                            <div class="stat-number">2+</div>
-                            <div class="stat-label">Años Creando</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">100+</div>
-                            <div class="stat-label">Piezas Pintadas</div>
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Marcas Impulsadas</div>
                         </div>
                         <div class="stat">
                             <div class="stat-number">100%</div>
-                            <div class="stat-label">Hecho a Mano</div>
+                            <div class="stat-label">Enfoque a Resultados</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5K+</div>
+                            <div class="stat-label">Unidades Producidas</div>
                         </div>
                     </div>
 
                     <div class="about-features">
-                        <div class="feature">
-                            <i class="fas fa-palette"></i>
-                            <span>Diseños Personalizados</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-heart"></i>
-                            <span>100% Hecho a Mano</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-leaf"></i>
-                            <span>Slow Fashion</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-truck"></i>
-                            <span>Envíos a Todo México</span>
-                        </div>
+                        <div class="feature"><i class="fas fa-code"></i><span>Desarrollo Web Moderno</span></div>
+                        <div class="feature"><i class="fas fa-industry"></i><span>Capacidad de Producción</span></div>
+                        <div class="feature"><i class="fas fa-chess-knight"></i><span>Estrategia de Marca</span></div>
+                        <div class="feature"><i class="fas fa-truck"></i><span>Envíos Nacionales</span></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <!-- ==============================
-         HOW IT WORKS / PROCESO
+         METODOLOGÍA (Antes Proceso)
          ============================== -->
-    <section class="how-it-works" id="proceso">
+    <section class="how-it-works" id="metodologia">
         <div class="container">
-            <h2 class="section-title fade-in">¿Cómo <span class="highlight">Funciona</span>?</h2>
-            <p class="section-subtitle fade-in">Tres simples pasos para tener tu propia obra de arte vestible.</p>
+            <h2 class="section-title fade-in">Nuestra <span class="highlight">Metodología</span></h2>
+            <p class="section-subtitle fade-in">Un flujo de trabajo ágil y estructurado para garantizar el éxito de tu proyecto.</p>
 
             <div class="steps-grid">
-
                 <div class="step-card fade-in">
                     <div class="step-number">1</div>
-                    <div class="step-icon"><i class="fas fa-shopping-bag"></i></div>
-                    <h3 class="step-title">Elige Tu Diseño</h3>
-                    <p class="step-description">
-                        Selecciona una pieza disponible de nuestro drop semanal o cuéntanos tu idea
-                        para un diseño personalizado.
-                    </p>
+                    <div class="step-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="step-title">Diagnóstico & Briefing</h3>
+                    <p class="step-description">Entendemos las necesidades de tu empresa, tu público objetivo y los alcances técnicos o de producción requeridos.</p>
                 </div>
-
                 <div class="step-card fade-in">
                     <div class="step-number">2</div>
-                    <div class="step-icon"><i class="fas fa-paint-brush"></i></div>
-                    <h3 class="step-title">Personalizamos</h3>
-                    <p class="step-description">
-                        Naomi pinta tu sudadera a mano con los colores y detalles que elegiste.
-                        Tiempo estimado: 5-7 días.
-                    </p>
+                    <div class="step-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3 class="step-title">Desarrollo Creativo</h3>
+                    <p class="step-description">Diseñamos tu identidad, programamos el código de tu plataforma o producimos los prototipos físicos de tu merch.</p>
                 </div>
-
                 <div class="step-card fade-in">
                     <div class="step-number">3</div>
-                    <div class="step-icon"><i class="fas fa-box"></i></div>
-                    <h3 class="step-title">Recibe Tu Arte</h3>
-                    <p class="step-description">
-                        Tu pieza única es empacada con cuidado y enviada a tu puerta. ¡Lista para lucir!
-                    </p>
+                    <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                    <h3 class="step-title">Lanzamiento</h3>
+                    <p class="step-description">Entregamos tu ecosistema digital funcional y tu mercancía empaquetada lista para impactar en el mercado.</p>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <!-- ==============================
-         PRICING / PRECIOS
+         SOLUCIONES B2B (Antes Precios)
          ============================== -->
-    <section class="pricing" id="precios">
+    <section class="pricing" id="soluciones">
         <div class="container">
             <h2 class="section-title fade-in" style="color: var(--blanco);">
-                Inversión <span class="highlight">Artística</span>
+                Soluciones <span class="highlight">Corporativas</span>
             </h2>
             <p class="section-subtitle fade-in" style="color: rgba(255,255,255,0.65);">
-                Precios justos por arte único. Cada pieza vale la pena.
+                Inversiones estratégicas para escalar la presencia de tu marca.
             </p>
 
             <div class="pricing-grid">
-
-                <!-- Plan 1 -->
+                <!-- Paquete 1 -->
                 <div class="pricing-card fade-in">
-                    <h3 class="pricing-title">Diseño Estándar</h3>
-                    <p class="pricing-subtitle">Para diseños predefinidos</p>
-                    <div class="pricing-price">$850 <span>MXN</span></div>
+                    <h3 class="pricing-title">Identidad Visual</h3>
+                    <p class="pricing-subtitle">Para nuevas marcas</p>
+                    <div class="pricing-price">Desde $4,000 <span>MXN</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Sudadera de calidad premium</li>
-                        <li><i class="fas fa-check"></i> Diseño pintado a mano</li>
-                        <li><i class="fas fa-check"></i> 5-7 días de producción</li>
-                        <li><i class="fas fa-check"></i> Empaque especial</li>
-                        <li><i class="fas fa-times"></i> Personalización completa</li>
+                        <li><i class="fas fa-check"></i> Diseño de Logotipo</li>
+                        <li><i class="fas fa-check"></i> Paleta de color y tipografía</li>
+                        <li><i class="fas fa-check"></i> Manual de uso básico</li>
+                        <li><i class="fas fa-check"></i> Archivos vectoriales</li>
                     </ul>
-                    <a href="#contacto" class="btn-pricing">Ordenar</a>
+                    <a href="#contacto" class="btn-pricing" onclick="document.getElementById('tipo').value='branding'">Cotizar</a>
                 </div>
 
-                <!-- Plan 2 — Destacado -->
+                <!-- Paquete 2 -->
                 <div class="pricing-card featured-plan fade-in">
-                    <h3 class="pricing-title">Diseño Personalizado</h3>
-                    <p class="pricing-subtitle">Tu idea, hecha realidad</p>
-                    <div class="pricing-price">$1,200 <span>MXN</span></div>
+                    <h3 class="pricing-title">Desarrollo Web</h3>
+                    <p class="pricing-subtitle">Presencia digital robusta</p>
+                    <div class="pricing-price">Desde $8,500 <span>MXN</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Sudadera de calidad premium</li>
-                        <li><i class="fas fa-check"></i> Diseño 100% personalizado</li>
-                        <li><i class="fas fa-check"></i> Boceto previo de aprobación</li>
-                        <li><i class="fas fa-check"></i> 7-10 días de producción</li>
-                        <li><i class="fas fa-check"></i> Certificado de autenticidad</li>
+                        <li><i class="fas fa-check"></i> Diseño UX/UI Moderno</li>
+                        <li><i class="fas fa-check"></i> Optimización móvil (Responsive)</li>
+                        <li><i class="fas fa-check"></i> SEO Básico integrado</li>
+                        <li><i class="fas fa-check"></i> Integración de contacto</li>
                     </ul>
-                    <a href="#contacto" class="btn-pricing btn-featured">Cotizar</a>
+                    <a href="#contacto" class="btn-pricing btn-featured" onclick="document.getElementById('tipo').value='web'">Cotizar Web</a>
                 </div>
 
-                <!-- Plan 3 -->
+                <!-- Paquete 3 -->
                 <div class="pricing-card fade-in">
-                    <h3 class="pricing-title">Edición Colección</h3>
-                    <p class="pricing-subtitle">Piezas únicas de autor</p>
-                    <div class="pricing-price">$1,500+ <span>MXN</span></div>
+                    <h3 class="pricing-title">Merch por Volumen</h3>
+                    <p class="pricing-subtitle">Uniformes y promocionales</p>
+                    <div class="pricing-price">Cotización <span>A Medida</span></div>
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Diseño original de Naomi</li>
-                        <li><i class="fas fa-check"></i> Técnica especial (acuarela, mixta)</li>
-                        <li><i class="fas fa-check"></i> Pieza numerada y firmada</li>
-                        <li><i class="fas fa-check"></i> Certificado de autenticidad</li>
-                        <li><i class="fas fa-check"></i> Empaque premium de colección</li>
+                        <li><i class="fas fa-check"></i> Playeras y Sudaderas sublimadas</li>
+                        <li><i class="fas fa-check"></i> Termos, tazas y accesorios</li>
+                        <li><i class="fas fa-check"></i> Calidad premium comprobada</li>
+                        <li><i class="fas fa-check"></i> Tiempos de entrega ágiles</li>
                     </ul>
-                    <a href="#contacto" class="btn-pricing">Ver Disponibles</a>
+                    <a href="#contacto" class="btn-pricing" onclick="document.getElementById('tipo').value='merch'">Solicitar Muestras</a>
                 </div>
-
             </div>
         </div>
     </section>
 
-
     <!-- ==============================
-         CONTACT / PEDIDO
+         CONTACTO / LEAD GEN
          ============================== -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section-title fade-in">Haz Tu <span class="highlight">Pedido</span></h2>
-            <p class="section-subtitle fade-in">
-                ¿Listo para tener tu propia obra de arte? Completa el formulario y
-                nos pondremos en contacto contigo.
-            </p>
+            <h2 class="section-title fade-in">Inicia Tu <span class="highlight">Proyecto</span></h2>
+            <p class="section-subtitle fade-in">Completa el formulario y uno de nuestros directores se pondrá en contacto contigo para agendar una consultoría.</p>
 
             <div class="contact-grid">
-
                 <!-- Info -->
                 <div class="contact-info fade-in">
-                    <h3>Información De Contacto</h3>
-                    <p>Estamos aquí para responder todas tus dudas y ayudarte a crear la sudadera perfecta.</p>
-
+                    <h3>Hablemos de Negocios</h3>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <div class="contact-item-text">
-                                <h4>Email</h4>
-                                <p>contacto@drawbynao.com</p>
+                                <h4>Email Corporativo</h4>
+                                <p>hola@drawbynao.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-whatsapp"></i>
                             <div class="contact-item-text">
-                                <h4>WhatsApp</h4>
+                                <h4>Atención a Marcas</h4>
                                 <p>+52 1 222 XXX XXXX</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div class="contact-item-text">
-                                <h4>Tiempo De Respuesta</h4>
-                                <p>24-48 horas hábiles</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-truck"></i>
-                            <div class="contact-item-text">
-                                <h4>Envíos</h4>
-                                <p>A todo México (5-10 días)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://instagram.com/drawbynao" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://tiktok.com/@drawbynao" target="_blank" aria-label="TikTok">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a href="https://facebook.com/drawbynao" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://wa.me/521222XXXXXXX" target="_blank" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
                     </div>
                 </div>
 
@@ -439,131 +313,70 @@
                             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            <label for="empresa">Empresa / Proyecto</label>
+                            <input type="text" id="empresa" name="empresa" required placeholder="Nombre de tu marca">
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="telefono">Teléfono / WhatsApp</label>
-                            <input type="tel" id="telefono" name="telefono" required placeholder="10 dígitos">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
                         </div>
                         <div class="form-group">
-                            <label for="tipo">Tipo De Pedido</label>
+                            <label for="tipo">Servicio de Interés</label>
                             <select id="tipo" name="tipo" required>
                                 <option value="">Selecciona una opción</option>
-                                <option value="anime">Diseño Anime</option>
-                                <option value="banda">Diseño Banda</option>
-                                <option value="original">Diseño Original</option>
-                                <option value="personalizado">Personalizado</option>
-                                <option value="coleccion">Edición Colección</option>
+                                <option value="web">Desarrollo Web</option>
+                                <option value="merch">Producción Merch / Sublimación</option>
+                                <option value="branding">Identidad de Marca</option>
+                                <option value="integral">Proyecto Integral (Varios)</option>
                             </select>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="producto">Producto De Interés</label>
-                        <input type="text" id="producto" name="producto"
-                               placeholder="Ej: My Hero Academia, El Bicho, etc.">
+                        <label for="mensaje">Detalles del Proyecto</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos los objetivos de tu empresa, cantidad estimada si es merch, o funcionalidades requeridas si es web..."></textarea>
                     </div>
 
                     <div class="form-group">
-                        <label for="mensaje">Cuéntanos Tu Idea</label>
-                        <textarea id="mensaje" name="mensaje"
-                                  placeholder="Describe el diseño que tienes en mente, colores, referencias, etc."></textarea>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="presupuesto">Presupuesto Aproximado</label>
+                        <label for="presupuesto">Presupuesto Estimado</label>
                         <select id="presupuesto" name="presupuesto">
                             <option value="">Selecciona un rango</option>
-                            <option value="800-1000">$800 - $1,000 MXN</option>
-                            <option value="1000-1500">$1,000 - $1,500 MXN</option>
-                            <option value="1500+">$1,500+ MXN</option>
+                            <option value="5k-10k">$5,000 - $10,000 MXN</option>
+                            <option value="10k-25k">$10,000 - $25,000 MXN</option>
+                            <option value="25k+">Más de $25,000 MXN</option>
                         </select>
                     </div>
 
                     <button type="submit" class="form-submit">Enviar Solicitud</button>
                 </form>
-
             </div>
         </div>
     </section>
 
-
-    <!-- ==============================
-         FOOTER
-         ============================== -->
+    <!-- FOOTER (Simplificado para B2B) -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-
+            <div class="footer-grid" style="grid-template-columns: 1fr 1fr;">
                 <div class="footer-brand">
                     <a href="#inicio" class="logo">
-                        <img src="img/logo.png" alt="Draw By Nao Logo" class="logo-img"
-                             onerror="this.style.display='none'">
-                        <span class="logo-text">Draw <span>By Nao</span></span>
+                        <span class="logo-text" style="color:#fff">Draw <span style="color:#DC2626">By Nao</span></span>
                     </a>
-                    <p>Arte que se viste. Sudaderas y chamarras pintadas a mano con diseños únicos de anime,
-                       bandas y arte original. Cada pieza es irrepetible.</p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/drawbynao" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://tiktok.com/@drawbynao" target="_blank"><i class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/drawbynao" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </div>
+                    <p>Estudio creativo integral. Desarrollamos tecnología, identidades visuales y producción física de mercancía para marcas que buscan destacar.</p>
                 </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-title">Navegación</h4>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#coleccion">Colección</a></li>
-                        <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#proceso">Proceso</a></li>
-                        <li><a href="#precios">Precios</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
+                <div class="footer-column" style="text-align: right;">
+                    <h4 class="footer-title">Contacto Rápido</h4>
+                    <p style="color: #9CA3AF; margin-bottom: 10px;">hola@drawbynao.com</p>
+                    <p style="color: #9CA3AF;">Puebla, México</p>
                 </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-title">Productos</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Sudaderas</a></li>
-                        <li><a href="#">Chamarras</a></li>
-                        <li><a href="#">Bolsas De Manta</a></li>
-                        <li><a href="#">Ediciones Limitadas</a></li>
-                        <li><a href="#">Personalizados</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4 class="footer-title">Ayuda</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Tiempos De Entrega</a></li>
-                        <li><a href="#">Envíos</a></li>
-                        <li><a href="#">Cuidado De Tu Prenda</a></li>
-                        <li><a href="#">Política De Privacidad</a></li>
-                    </ul>
-                </div>
-
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2024 Draw By Nao. Todos los derechos reservados. | Arte hecho con ❤️ en Puebla, México</p>
-                <div class="payment-methods">
-                    <i class="fab fa-cc-visa"></i>
-                    <i class="fab fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-amex"></i>
-                    <i class="fab fa-paypal"></i>
-                </div>
+                <p>&copy; 2026 Draw By Nao Studio. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-
-    <!-- JavaScript -->
     <script src="js/main.js"></script>
 </body>
 </html>
